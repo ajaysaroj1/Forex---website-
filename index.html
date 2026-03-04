@@ -3,84 +3,247 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ProFX Trading | Forex Signals</title>
+<title>Florex Capital | Institutional Forex & Gold Trading</title>
+
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0f172a;
-    color: white;
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#0b1120;
+color:white;
+scroll-behavior:smooth;
 }
-header {
-    background: #111827;
-    padding: 20px;
-    text-align: center;
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#111827;
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
 }
-nav a {
-    color: #38bdf8;
-    margin: 0 15px;
-    text-decoration: none;
+
+header h2{
+color:#00f5c4;
+margin:0;
 }
-.hero {
-    padding: 80px 20px;
-    text-align: center;
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:500;
 }
-.hero h1 {
-    font-size: 40px;
+
+nav a:hover{
+color:#00f5c4;
 }
-.btn {
-    background: #38bdf8;
-    padding: 12px 25px;
-    color: black;
-    text-decoration: none;
-    border-radius: 5px;
+
+.hero{
+padding:150px 20px 100px;
+text-align:center;
+background:linear-gradient(to right,#0f172a,#1e293b);
 }
-.section {
-    padding: 50px 20px;
-    text-align: center;
+
+.hero h1{
+font-size:48px;
+margin-bottom:15px;
 }
-footer {
-    background: #111827;
-    padding: 20px;
-    text-align: center;
+
+.hero p{
+font-size:18px;
+opacity:0.8;
+}
+
+.btn{
+display:inline-block;
+padding:12px 30px;
+background:#00f5c4;
+color:black;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+margin-top:20px;
+}
+
+.section{
+padding:80px 20px;
+text-align:center;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+margin-top:40px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+width:280px;
+border-radius:10px;
+box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+
+.card h3{
+color:#00f5c4;
+}
+
+.pricing-card{
+background:#111827;
+padding:30px;
+width:300px;
+border-radius:10px;
+border:1px solid #00f5c4;
+}
+
+footer{
+background:#111827;
+padding:40px 20px;
+text-align:center;
+font-size:14px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:12px 18px;
+border-radius:30px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+.telegram{
+position:fixed;
+bottom:70px;
+right:20px;
+background:#0088cc;
+padding:12px 18px;
+border-radius:30px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+input, textarea{
+width:90%;
+padding:10px;
+margin:10px 0;
+border-radius:6px;
+border:none;
 }
 </style>
 </head>
+
 <body>
 
 <header>
-    <h2>ProFX Trading</h2>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Signals</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
+<h2>FLOREX CAPITAL</h2>
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#pricing">Pricing</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
-<div class="hero">
-    <h1>Professional Forex Trading Signals</h1>
-    <p>Accurate | Reliable | Profitable</p>
-    <a href="#" class="btn">Join Now</a>
+<section class="hero" id="home">
+<h1>Institutional Forex & Gold Trading Intelligence</h1>
+<p>Precision Strategy | Smart Risk | Sustainable Growth</p>
+<a href="#pricing" class="btn">Join Premium</a>
+</section>
+
+<section class="section" id="services">
+<h2>Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Forex Signals</h3>
+<p>High-probability setups with strict risk management.</p>
 </div>
 
-<div class="section">
-    <h2>Our Services</h2>
-    <p>Daily Forex Signals</p>
-    <p>Gold (XAUUSD) Analysis</p>
-    <p>Risk Management Guidance</p>
+<div class="card">
+<h3>Gold (XAUUSD)</h3>
+<p>Institutional gold trading strategies.</p>
 </div>
 
-<div class="section">
-    <h2>Why Choose Us?</h2>
-    <p>✔ 90%+ Accuracy</p>
-    <p>✔ Live Market Updates</p>
-    <p>✔ 24/7 Support</p>
+<div class="card">
+<h3>Broker Partnership</h3>
+<p>Earn via IB model with top global brokers.</p>
 </div>
+
+</div>
+</section>
+
+<section class="section">
+<h2>Live Gold Chart</h2>
+
+<script src="https://s3.tradingview.com/tv.js"></script>
+<script>
+new TradingView.widget({
+"width":"100%",
+"height":400,
+"symbol":"OANDA:XAUUSD",
+"interval":"60",
+"timezone":"Asia/Kolkata",
+"theme":"dark"
+});
+</script>
+
+</section>
+
+<section class="section" id="pricing">
+<h2>Premium Plans</h2>
+
+<div class="cards">
+
+<div class="pricing-card">
+<h3>Basic Plan</h3>
+<p>₹2,999 / Month</p>
+<p>3–5 Signals Daily</p>
+<p>Telegram Access</p>
+<a class="btn" href="#">Subscribe</a>
+</div>
+
+<div class="pricing-card">
+<h3>VIP Plan</h3>
+<p>₹6,999 / Month</p>
+<p>All Signals</p>
+<p>Gold Special Access</p>
+<p>Priority Support</p>
+<a class="btn" href="#">Subscribe</a>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="contact">
+<h2>Contact Us</h2>
+
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea placeholder="Your Message"></textarea>
+<br>
+<a class="btn" href="#">Send Message</a>
+
+</section>
 
 <footer>
-    <p>© 2026 ProFX Trading. All Rights Reserved.</p>
+<p>© 2026 Florex Capital. All Rights Reserved.</p>
+<p>Forex trading involves substantial risk. No guaranteed returns. Trade responsibly.</p>
 </footer>
+
+<a class="whatsapp" href="https://wa.me/91XXXXXXXXXX">WhatsApp</a>
+<a class="telegram" href="https://t.me/YOURCHANNEL">Telegram</a>
 
 </body>
 </html>
